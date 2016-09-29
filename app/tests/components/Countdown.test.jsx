@@ -24,5 +24,14 @@ describe('Countdown', () => {
         done();
       }, 1001);
     });
+
+    it('should stop at zero', (done) => {
+      var countdown = TestUtils.renderIntoDocument(<Countdown />);
+      countdown.handleSetCountdown(2);
+      setTimeout(() => {
+        expect(countdown.state.count).toBe(0);
+        done();
+      }, 3000);
+    })
   });
 });
