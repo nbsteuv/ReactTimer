@@ -40,13 +40,13 @@ var Countdown = React.createClass({
     }
   },
   componentWillUpdate: function(nextProps, nextState){
-    console.log('Component will update');
+    // console.log('Component will update');
   },
   componentWillMount: function(){
-    console.log('Component will mount');
+    // console.log('Component will mount');
   },
   componentDidMount: function(){
-    console.log('Component did mount');
+    // console.log('Component did mount');
   },
   componentWillUnmount: function(){
     clearInterval(this.timer);
